@@ -107,7 +107,7 @@
 }
 
 /* 📱 адаптация */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .flag {
     width: 150px;
     height: 100px;

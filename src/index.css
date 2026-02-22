@@ -13,6 +13,13 @@ code {
     monospace;
 }
 
+main {
+  position: fixed; /* или absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 h1 {
   text-align: center;
   color: #7aaace;
