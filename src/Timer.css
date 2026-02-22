@@ -1,0 +1,27 @@
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.timer-block {
+  background: #7aaace;
+  color: #fff;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  min-width: 52px;
+  text-align: center;
+}
+
+/* 📱 мобильные */
+@media (max-width: 480px) {
+  .timer-block {
+    font-size: 18px;
+    padding: 8px 12px;
+    min-width: 44px;
+  }
+}
