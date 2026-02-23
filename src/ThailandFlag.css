@@ -1,115 +1,13 @@
-.flag-scene {
-  perspective: 500px;
-  justify-items: center;
-  margin-top: 50px;
-}
-
 /* флаг */
 .flag {
-  position: relative;
-  width: 200px;
-  height: 130px;
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
-  transform-origin: left center;
-  animation: waveFlag 5s infinite ease-in-out;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
-}
-
-/* полосы */
-.stripe {
-  width: 100%;
-}
-
-.red {
-  background: #b5002d;
-  height: 20%;
-}
-
-.white {
-  background: #ffffff;
-  height: 15%;
-}
-
-.blue {
-  background: #2d2a7c;
-  height: 30%;
-}
-
-/* 🧵 эффект ткани */
-.flag::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.25) 0%,
-    rgba(255, 255, 255, 0.05) 40%,
-    rgba(0, 0, 0, 0.15) 70%
-  );
-  animation: fabricLight 3s infinite linear;
-  pointer-events: none;
-}
-
-/* 🌊 волна */
-.flag::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    -60deg,
-    rgba(255, 255, 255, 0.25),
-    rgba(255, 255, 255, 0),
-    rgba(0, 0, 0, 0.25)
-  );
-  mix-blend-mode: overlay;
-  animation: waveShadow 2.5s infinite linear;
-  pointer-events: none;
-}
-
-/* 🎬 анимации */
-@keyframes waveFlag {
-  0% {
-    transform: rotateY(0deg) skewY(0deg);
-  }
-  25% {
-    transform: rotateY(-12deg) skewY(-1deg);
-  }
-  50% {
-    transform: rotateY(0deg) skewY(0deg);
-  }
-  75% {
-    transform: rotateY(12deg) skewY(1deg);
-  }
-  100% {
-    transform: rotateY(0deg) skewY(0deg);
-  }
-}
-
-@keyframes fabricLight {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
-
-@keyframes waveShadow {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(200%);
-  }
+  justify-content: center;
 }
 
 /* 📱 адаптация */
 @media (min-width: 480px) {
   .flag {
-    width: 150px;
     height: 100px;
   }
 }

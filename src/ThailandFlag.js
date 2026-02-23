@@ -1,15 +1,10 @@
 import "./ThailandFlag.css";
+import logo from "./blendertimer-thailand-714.gif";
 
 function ThailandFlag() {
   return (
-    <div className="flag-scene">
-      <div className="flag">
-        <span className="stripe red"></span>
-        <span className="stripe white"></span>
-        <span className="stripe blue"></span>
-        <span className="stripe white"></span>
-        <span className="stripe red"></span>
-      </div>
+    <div className="flag">
+      <img src={logo} alt="Thailand" />
     </div>
   );
 }
