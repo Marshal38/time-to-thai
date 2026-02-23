@@ -54,7 +54,11 @@ function Timer({ targetDate }) {
 
   return (
     <div className="timer">
-      {timerComponents.length ? timerComponents : <span>Время вышло!</span>}
+      {timerComponents.length ? (
+        timerComponents
+      ) : (
+        <span>МОМЕНТ ВСТРЕЧИ!🌴</span>
+      )}
     </div>
   );
 }
