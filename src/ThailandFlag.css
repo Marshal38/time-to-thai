@@ -6,7 +6,7 @@
 }
 
 /* 📱 адаптация */
-@media (min-width: 480px) {
+@media (min-width: 360px) {
   .flag {
     height: 100px;
   }
